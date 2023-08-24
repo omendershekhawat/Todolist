@@ -11,14 +11,14 @@ function Todo() {
   const [flag, setFlag] = useState(false)
   const [completed, setCompleted] = useState([])
 
-  //In react, events are passed to event handler functions implictly(automatically)
+
 
   function handleChange(e) {
-    // console.log(e)
+   
     setInputValue(e.target.value);
   }
 
-  // console.log(inputValue)
+ 
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -27,9 +27,8 @@ function Todo() {
       setTasks([...tasks, inputValue]);
     else{
 
-      // ['Learn Express', 'Learn Node']
 
-      tasks[flag] = inputValue; // We have created a copy of state variable tasks and modified that copy. 
+      tasks[flag] = inputValue;  
       setTasks(tasks)
       setFlag(false)
     }
@@ -56,7 +55,7 @@ function Todo() {
     setCompleted([...completed, index])
   }
 
-  // console.log(tasks);
+ 
 
   return (
     <>
@@ -67,7 +66,7 @@ function Todo() {
             type="text"
             placeholder="Enter your task"
             value={inputValue}
-            //onChange={handleChange}
+      
             onChange={(e) => setInputValue(e.target.value)}
           />
           <button type="submit">Add Task</button>

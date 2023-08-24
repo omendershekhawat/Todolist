@@ -14,10 +14,10 @@ function Counter(){
         <>
       <button onClick= {incrementCounter} disabled={counter === 10}>Increment</button>
       <p>{counter}</p>
-      <button onClick={decrementCounter}disabled={counter=== 0}>Decrement</button>
+      <button onClick={decrementCounter}disabled  ={counter=== 0}>Decrement</button>
         </>
     )
 }
-    // console.log(counter)
+    // console.log(counter)0..0.
 
 export default Counter;
